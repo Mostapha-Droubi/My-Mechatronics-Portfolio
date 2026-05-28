@@ -1,0 +1,18 @@
+# Manufacturing Files: AquaGuard System
+
+This directory contains the production-ready files required to fabricate the AquaGuard Smart Water System PCB.
+
+## Contents
+* **[gerbers.zip](gerbers.zip)**: The compressed Gerber archive containing all necessary layers (Copper, Soldermask, Silkscreen, Drill files) required for PCB fabrication.
+    * *Note: Do not unzip these files when submitting to a manufacturer.*
+* **[bom.csv](bom.csv)**: The Bill of Materials (BOM) listing all electronic components required for assembly, including part designators, quantities, and recommended footprints.
+
+## Fabrication Guidelines
+* **Board Specification**: 2-layer FR-4 PCB.
+* **Surface Finish**: HASL (Hot Air Solder Leveling) or ENIG (Electroless Nickel Immersion Gold).
+* **Manufacturer Compatibility**: Files are compatible with standard services like JLCPCB, PCBWay, and Seeed Studio.
+
+## Assembly Instructions
+1. **PCB Fabrication**: Upload `gerbers.zip` to your chosen manufacturer's website.
+2. **Component Procurement**: Use the `bom.csv` to source parts. Ensure that all capacitors and resistors match the package sizes (e.g., 0805, 0603) specified in the design.
+3. **Reflow/Hand Soldering**: If performing manual assembly, refer to the schematics in the `/Hardware` folder for precise placement and orientation of polarized components (diodes, electrolytic capacitors, and ICs).
