@@ -1,0 +1,19 @@
+# Hardware Design: AquaGuard Smart Water System
+
+This directory contains the hardware design files for the AquaGuard system, developed using EasyEDA.
+
+## Design Specifications
+* **Board Type**: Double-layer Printed Circuit Board (PCB).
+* **Software**: Designed and routed in [EasyEDA](https://easyeda.com/).
+* **Core Components**: ATmega328P, ESP8266, Relay modules, and various sensor interfaces.
+
+## Files Included
+* **[AquaGuard_Design.json](AquaGuard_Design.json)**: The primary project source file containing the schematic and PCB layout data.
+* **Schematic Exports**: Refer to the `/Documentation` folder for high-resolution PDF exports of the circuit design.
+
+## Design Considerations
+* The board is designed for modular integration, allowing the ESP8266 to handle IoT communications while the main controller manages high-power relay switching.
+* Proper clearance and trace widths have been applied to ensure signal integrity for the ultrasonic and water quality sensors[cite: 1].
+
+## Fabrication
+* For manufacturing, please refer to the Gerber files located in the `/Manufacturing` directory[cite: 1].
