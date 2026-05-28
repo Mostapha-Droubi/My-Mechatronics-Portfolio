@@ -1,0 +1,19 @@
+# Project Documentation: AquaGuard Smart Water System
+
+This directory contains the technical documentation for the AquaGuard project, covering system design, mechanical architecture, and project reporting.
+
+## Technical Reports
+* **[AquaGuard Report.pdf](AquaGuard_Report.pdf)**: Comprehensive project thesis document including system architecture, mathematical modeling, and final implementation results.
+
+## Visual Design & Renders
+* **[212112.PNG](212112.PNG)**: High-resolution 3D render showing the professional component layout and top-side PCB design.
+
+## Schematics
+* **System Schematic**: The foundational blueprint of the control circuitry, illustrating the integration of the ATmega328P/ESP8266 and peripheral sensor modules.
+
+---
+
+## Additional Assets
+* If additional schematics (e.g., PDF exports from EasyEDA) or datasheets for custom modules are required, they will be archived here.
+
+*Note: For the full fabrication files (Gerbers/BOM), please refer to the `/Manufacturing` directory within the project root.*
