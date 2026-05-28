@@ -1,26 +1,27 @@
-# AquaGuard System Firmware
+# AquaGuard: Smart Water Management System
 
-This directory contains the source code for the AquaGuard Smart Water Management System. The system utilizes a master/slave architecture for IoT connectivity and sensor data processing.
+The AquaGuard Smart Water System is an IoT-enabled solution designed to automate water level monitoring, pump control, and leak detection. This repository contains the complete hardware design, manufacturing files, documentation, and firmware source code.
 
-## Firmware Architecture
-* **Main Controller**: Arduino Uno R3 (Handles sensors, relay control, and local LCD display).
-* **IoT Module**: ESP8266 (Manages Wi-Fi connectivity and communication with the Blynk IoT platform).
 
-## Requirements
-* **IDE**: Arduino IDE 2.x or higher.
-* **Libraries**: 
-    * `BlynkSimpleEsp8266.h`
-    * `LiquidCrystal_I2C.h`
-    * `NewPing.h` (for ultrasonic sensors)
-* **Board Settings**: 
-    * For ESP8266: Select "Generic ESP8266 Module".
-    * For Arduino: Select "Arduino Uno".
+## 📁 Repository Structure
+* **/Hardware**: EasyEDA project files, schematic data, and PCB layout sources.
+* **/Documentation**: Project reports, high-resolution renders, and technical documentation.
+* **/Manufacturing**: Production-ready Gerber files (`gerbers.zip`) and Bill of Materials (`bom.csv`).
+* **/Firmware**: Source code for ESP8266 and Arduino integration.
 
-## Installation Steps
-1. Open the `.ino` file in the Arduino IDE.
-2. Install all required dependencies from the Library Manager.
-3. Update the `BLYNK_AUTH_TOKEN`, `WIFI_SSID`, and `WIFI_PASS` in the configuration section of the code.
-4. Compile and upload the code to the respective microcontrollers.
+##  Key Specifications
+* **Controller**: ATmega328P / Arduino Uno R3.
+* **Connectivity**: ESP8266 Wi-Fi module (Blynk IoT integration).
+* **PCB Design**: 2-layer FR-4 board, optimized for noise reduction and high-current relay switching.
+* **Project Status**: Completed / Fabrication Ready.
 
-## Communication Protocol
-The Arduino and ESP8266 communicate via SoftwareSerial, exchanging system status data to ensure the Blynk dashboard reflects real-time water levels and leak alerts.
+## 🛠 Usage
+1.  **Hardware Fabrication**: Use the files in `/Manufacturing` to order the PCB from your preferred fabrication house.
+2.  **Assembly**: Refer to the `/Hardware` schematics for component placement.
+3.  **Firmware Deployment**: Open the `.ino` files in the `/Firmware` folder using the Arduino IDE and configure your network credentials.
+
+## 📝 License
+This project is licensed under the **CERN Open Hardware Licence Version 2 - Permissive**.
+
+---
+*Developed by [Mostapha Droubi]*
